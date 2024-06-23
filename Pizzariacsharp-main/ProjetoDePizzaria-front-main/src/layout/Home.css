@@ -1,0 +1,38 @@
+/* Home.css */
+
+.home-header {
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para legibilidade */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .home-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .home-header p {
+    font-size: 1.2em;
+  }
+  
+  .home-section {
+    margin-top: 20px;
+  }
+  
+  .home-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #e5533d;
+  }
+  

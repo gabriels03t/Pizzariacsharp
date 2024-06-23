@@ -1,0 +1,113 @@
+/* Cardapio.css */
+
+.cardapio {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .cardapio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .cardapio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .cardapio li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(30% - 40px);
+    max-width: calc(30% - 40px);
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .cardapio img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cardapio h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  .cardapio p {
+    font-size: 16px;
+    margin: 0 0 20px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: auto;
+    width: 100%;
+    text-decoration: none; /* Adiciona estilo de link */
+    display: block; /* Certifique-se de que ocupa toda a largura */
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para cada pizza */
+  .cardapio .calabresa {
+    border-color: #FFC080;
+  }
+  
+  .cardapio .quatro-queijos {
+    border-color: #F7DC6F;
+  }
+  
+  .cardapio .frango-catupiry {
+    border-color: #8BC34A;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .cardapio li {
+      flex: 1 1 calc(45% - 40px);
+      max-width: calc(45% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cardapio li {
+      flex: 1 1 calc(100% - 40px);
+      max-width: calc(100% - 40px);
+    }
+  }
+  
